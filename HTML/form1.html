@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form Day 2</h1>
+    <form method="" action="">
+        <label for="std_name">Student Name</label>
+        <input type="text" name="name" id="std_name" placeholder="Savyata Roka">
+        <br><br>
+        <label for="coverletter">Coverletter</label>
+        <br>
+        <textarea name="letter" id="coverletter" rows="25" cols="35" placeholder="write a coverletter"></textarea>
+        <br><br>
+        <!--Dragdown list-select/option-->
+        <label for="">Country</label>
+        <select name="country" id="country">
+            <option value="" disabled selected>Default</option>
+
+            <optgroup label="Asia">
+<option value="Nepal">Nepal</option>
+            <option value="India">India</option>
+            <option value="China">China</option>
+            <option value="Bhutan">Bhutan</option>
+            </optgroup>
+
+            <option value="Nepal">Nepal</option>
+            <option value="India">India</option>
+            <option value="China">China</option>
+            <option value="Bhutan">Bhutan</option>
+            <option value="USA">CUSA</option>
+            <option value="UK">UK</option>
+        </select>
+
+        <br><br>
+<!--file submission-->
+<label for="CV">CV</label>
+<input type="file" name="cv" id="cv" multiple accept=".pdf, .png">
+<br><br>
+
+<label for="postalcode">Postal Code</label>
+<input type="text" name="p_code" id="postalcode" pattern="[0-9]{5}">
+<br><br>
+
+<!--Date-->
+<input type="date" name="" id="">
+<input type="datetime-local" name="" id="">
+<br><br>
+
+<!--Color-->
+<input type="color" name="" id="">
+<br><br>
+
+<!--URL-->
+<input type="url" name="" id="">
+<br><br>
+
+<!--Number-->
+<input type="number" name="" id="">
+<br><br>
+
+<!--range-->
+<input type="range" name="" id="" min="0" max="100" step="25">
+<br><br>
+
+<!--<input type="submit"-->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
+

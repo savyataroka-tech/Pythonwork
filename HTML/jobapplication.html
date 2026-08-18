@@ -1,0 +1,116 @@
+<!--
+Create a job application.html file. In html file create a job application form including text field for 
+Personal Detail Section[name,email,contact,gender(type radio)province(select-option)],
+ Higher Education Section [education level (select option -highschool/ master level/phd level) ,
+ Work Experience Section[previous company name, experience level(1 year/ 2 year/3 year)]],
+ Other Details like cover letter and cv(file).
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Job Application Form</h1>
+    <form>
+
+        <!-- Personal Details -->
+        <fieldset>
+            <legend><b>Personal Details</b></legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="contact">Contact:</label>
+            <input type="tel" id="contact" name="contact" required>
+            <br><br>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+            <br><br>
+
+            <label for="province">Province:</label>
+            <select id="province" name="province" required>
+                <option value="">Select Province</option>
+                <option value="koshi">Koshi</option>
+                <option value="madhesh">Madhesh</option>
+                <option value="bagmati">Bagmati</option>
+                <option value="gandaki">Gandaki</option>
+                <option value="lumbini">Lumbini</option>
+                <option value="karnali">Karnali</option>
+                <option value="sudurpaschim">Sudurpaschim</option>
+            </select>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+<legend><b>Higher Education Sector</b></legend>
+<label for="education">Education</label>
+<select name="education" id="education" required>
+            <option value="" disabled selected>Default</option>
+            <option value="Highschool">Highschool</option>
+            <option value="Master level">Master level</option>
+            <option value="Phd">Phd</option>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend><b>Work Experience</b></legend>
+<label for="company">Previous Company Name:</label>
+<input type="text" id="company" name="company">
+            <br><br>
+
+            <label for="experience">Experience Level:</label>
+            <select id="experience" name="experience">
+             <option value="" disabled selected>Default</option>
+
+             <option value="">Select Experience</option>
+            <option value="1year">1 Year</option>
+            <option value="2year">2 Years</option>
+            <option value="3year">3 Years</option>
+            </select>
+
+        </fieldset>
+
+        <br>
+        <fieldset>
+            <legend><b>Other Details</b></legend>
+
+            <label for="coverletter">Cover Letter:</label>
+            <br>
+            <textarea id="coverletter" name="coverletter" rows="8" cols="50"></textarea>
+            <br><br>
+
+            <label for="cv">Upload CV:</label>
+            <input type="file" id="cv" name="cv">
+            <br><br>
+
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Submit Application">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>
